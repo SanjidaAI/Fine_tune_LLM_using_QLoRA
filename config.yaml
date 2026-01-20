@@ -1,0 +1,53 @@
+# Model Configuration
+model:
+  name: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+  max_length: 256
+
+# QLoRA 4-bit Quantization Config
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_compute_dtype: "float16"
+  bnb_4bit_use_double_quant: true
+
+# LoRA Configuration
+lora:
+  r: 16
+  lora_alpha: 32
+  target_modules: ["q_proj", "v_proj"]
+  lora_dropout: 0.05
+  bias: "none"
+  task_type: "CAUSAL_LM"
+
+# Dataset Configuration
+dataset:
+  name: "timdettmers/openassistant-guanaco"
+  exp1_samples: 100
+  exp2_samples: 200
+
+# Training Arguments - Experiment 1
+training_exp1:
+  output_dir: "./results_exp1"
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 4
+  learning_rate: 0.0002
+  num_train_epochs: 5
+  logging_steps: 10
+  save_steps: 50
+  fp16: true
+
+# Training Arguments - Experiment 2
+training_exp2:
+  output_dir: "./results_exp2"
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 4
+  learning_rate: 0.0002
+  num_train_epochs: 5
+  logging_steps: 10
+  save_steps: 50
+  fp16: true
+
+# Paths
+paths:
+  model_save_exp1: "tinyllama-qlora-exp1"
+  model_save_exp2: "tinyllama-qlora-exp2"
