@@ -177,7 +177,7 @@ Results show that Experiment 2 (200 samples) provides more structured and cohere
 ##  Author
 
 **Sanjida Haque**  
-**Course:** [Deep Learning & Generative AI]  
+**Course:** Deep Learning & Generative AI  
 **Assignment:** Fine-Tuning LLM using QLoRA  
 **Date:** 21st January 2026
 
