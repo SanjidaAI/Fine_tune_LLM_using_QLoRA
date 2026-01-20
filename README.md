@@ -119,7 +119,7 @@ All hyperparameters are stored in `config.yaml`:
 
 ---
 
-## 📊 Results Summary
+##  Results Summary
 
 | Experiment | Samples | Epochs | Training Loss | Runtime |
 |------------|---------|--------|---------------|---------|
@@ -130,7 +130,7 @@ All hyperparameters are stored in `config.yaml`:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Python 3.8+**
 - **PyTorch** - Deep learning framework
@@ -142,7 +142,7 @@ All hyperparameters are stored in `config.yaml`:
 
 ---
 
-## 📚 Dataset
+##  Dataset
 
 **Dataset:** [timdettmers/openassistant-guanaco](https://huggingface.co/datasets/timdettmers/openassistant-guanaco)
 
@@ -176,10 +176,10 @@ Results show that Experiment 2 (200 samples) provides more structured and cohere
 
 ##  Author
 
-**[Sanjida Haque]**  
+**Sanjida Haque**  
 **Course:** [Deep Learning & Generative AI]  
 **Assignment:** Fine-Tuning LLM using QLoRA  
-**Date:** January 2026
+**Date:** 21st January 2026
 
 ---
 
