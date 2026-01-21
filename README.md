@@ -94,6 +94,7 @@ compare_experiments(steps1, losses1, steps2, losses2)
 evaluate_experiment("exp1")
 evaluate_experiment("exp2")
 ```
+![Step 16 Graph](step16_graph.png)
 
 ### 4️⃣ Evaluate Trained Models
 ```python
