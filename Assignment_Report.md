@@ -1,8 +1,10 @@
 Fine-Tuning LLM using QLoRA - Assignment Report
+
 Student: SanjidaAI
 Date: January 21, 2026
 GitHub: https://github.com/SanjidaAI/Fine_tune_LLM_using_QLoRA
 Colab: https://colab.research.google.com/drive/1ieE7tlkycWlka6tHewpuP18m4RjEVJrJ
+
 
 1. Which Topic I Chose and Why
 I chose QLoRA (Quantized Low-Rank Adaptation) for fine-tuning Large Language Models because it makes advanced AI training accessible on limited hardware.
@@ -83,7 +85,7 @@ Key Design: Reloaded fresh base model for Experiment 2 to ensure fair comparison
 
 4. Results
 Quantitative Results
-MetricExperiment 1Experiment 2ImprovementDataset100 samples200 samples2xSteps1252502xFinal Loss1.67161.5787-5.5%Training Time~20 min~30 minProportional
+MetricExperiment 1Experiment 2ImprovementDataset100 samples200 samples2xSteps1252502xFinal Loss1.67161.5787-5.5% Training Time~20  min~30 min Proportional
 Key Finding: Doubling training data = 5.5% loss reduction
 Loss Curves
 
@@ -145,10 +147,10 @@ Result: Beautiful graphs saved and uploaded ✓
 
 6. Conclusions
 Achievements
-✅ Fine-tuned 1.1B model on free Colab GPU
-✅ 5.5% improvement with 2x data
-✅ Proved QLoRA works for resource-constrained training
-✅ Complete reproducible implementation
+ Fine-tuned 1.1B model on free Colab GPU
+ 5.5% improvement with 2x data
+ Proved QLoRA works for resource-constrained training
+ Complete reproducible implementation
 Key Learnings
 
 Data matters: Even 100→200 samples = noticeable improvement
