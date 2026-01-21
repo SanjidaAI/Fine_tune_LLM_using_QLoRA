@@ -1,8 +1,11 @@
 Fine-Tuning LLM using QLoRA - Assignment Report
 
 Student: SanjidaAI
+
 Date: January 21, 2026
+
 GitHub: https://github.com/SanjidaAI/Fine_tune_LLM_using_QLoRA
+
 Colab: https://colab.research.google.com/drive/1ieE7tlkycWlka6tHewpuP18m4RjEVJrJ
 
 
@@ -15,6 +18,7 @@ LoRA: Trains only 0.3% of parameters, dramatically reducing compute needs
 Accessibility: Enables fine-tuning billion-parameter models on free Google Colab GPUs
 
 Traditional fine-tuning requires 40GB+ GPU memory. QLoRA lets me do it on free 15GB Colab GPU. This democratizes AI - what needed expensive cloud infrastructure is now free.
+
 
 2. Dataset Description
 Dataset: OpenAssistant Guanaco (timdettmers/openassistant-guanaco)
@@ -38,6 +42,7 @@ Experiment 1: 100 samples, 5 epochs
 Experiment 2: 200 samples, 5 epochs
 
 This allowed me to measure the impact of dataset size on performance.
+
 
 3. How I Implemented It
 Base Model
@@ -83,6 +88,7 @@ Compare results
 
 Key Design: Reloaded fresh base model for Experiment 2 to ensure fair comparison.
 
+
 4. Results
 Quantitative Results
 MetricExperiment 1Experiment 2ImprovementDataset100 samples200 samples2xSteps1252502xFinal Loss1.67161.5787-5.5% Training Time~20  min~30 min Proportional
@@ -92,6 +98,7 @@ Loss Curves
 Both experiments: Smooth convergence, no overfitting
 Experiment 2: Consistently lower loss throughout training
 Clear visual difference in comparison graph
+
 
 Qualitative Results
 Test 1: "Explain what is a variable in programming."
@@ -105,6 +112,7 @@ Exp 1: Simple surface-level answer
 Exp 2: Detailed explanation, better coherence
 
 Conclusion: Same 2 questions applied to both experiments. Answer patterns are different. Experiment 2 shows better performance and provides more structured answers for fine-tuning with more data (200 samples).
+
 
 5. Problems Faced and How I Solved Them
 Problem 1: GPU Memory Limit
@@ -145,12 +153,14 @@ Solution:
 pythonplt.savefig('loss_curve.png', dpi=300)
 Result: Beautiful graphs saved and uploaded ✓
 
+
 6. Conclusions
 Achievements
  Fine-tuned 1.1B model on free Colab GPU
  5.5% improvement with 2x data
  Proved QLoRA works for resource-constrained training
  Complete reproducible implementation
+
 Key Learnings
 
 Data matters: Even 100→200 samples = noticeable improvement
@@ -158,12 +168,14 @@ QLoRA works: 4-bit + LoRA = accessible AI for everyone
 Proper experiment design: Fresh model reload ensures valid results
 Documentation: Clear code + visualizations = professional project
 
+
 Limitations
 
 Small dataset (100-200 samples)
 Could test 500-1000+ samples
 Could try other base models
 Could add automated metrics (BLEU, ROUGE)
+
 
 Future Work
 
